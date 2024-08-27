@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="h1">Encriptador</h1>
+
+    <div class="division">
+        <div class="PanelIzquierdo">
+            <textarea class="textarea1" id="mensajeUsuario" rows="20" cols="40" autofocus placeholder="Ingresa el texto aquí"></textarea>
+            <small> Letras minúsculas y sin acentos</small>
+        </div>
+
+        <div id="panelDerecho" class="panelDerecho">
+            <img id="imagen" src="/img/buscar.jpg" alt="Una persona mirando una lupa" width="336px" height="304"/>
+            <div class="mensajePanelDerecho">
+                <b class="mensajePanelDerecho">Ningún mensaje fue encontrado</b>
+                <p class="mensajePanelDerecho">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+        </div>
+        
+        <div class="respuesta">
+            <textarea id="respuesta" rows="20" cols="40" class="textarea2"></textarea>
+
+        </div>
+
+           
+    </div>
+   
+
+    <div class="botones">
+        <button onclick="Encriptar();encriptacion()" class="boton1">Encriptar</button>
+        <button onclick="Encriptar(); Desencriptar()" class="boton2">Desencriptar</button>
+        <button onclick="copiarTexto()" id="botonBorrar" class="boton2">Copiar</button>
+    </div>
+   
+
+        <p id="mensaje"></p>
+
+    
+    <footer>
+        <p>@Desarrolladora Yuli Paola Tovar Tique</p>
+    </footer>
+    <script src="codigo.js"></script>
+</body>
+
+</html>

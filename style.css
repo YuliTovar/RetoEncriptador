@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    background-color: #e9ecf8;
+    font-family: "Inter", sans-serif;
+    color: #0a3871; 
+
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    width: 680px;
+    height: 67px;
+
+}
+.boton1{
+    background-color: #0a3871;
+    color: #ffffff;
+    border: 1px solid #0a3871;
+    height: 67px;
+    width: 336px;
+    border-radius: 26px;
+    cursor: pointer;
+}
+.boton2{
+
+    background-color: #ffffff;
+    color: #0a3871;
+    border: 1px solid #0a3871;
+    height: 67px;
+    width: 336px;
+    border-radius: 26px;
+    cursor: pointer; 
+}
+
+.division{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.panelDerecho{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;      
+    justify-content: center;  
+    height: 944px;
+    width: 400px; 
+    border-radius: 32px;
+}
+.PanelIzquierdo{
+    display: flex;
+    flex-direction: column;   
+    align-items: left;      
+    justify-content: left;  
+    height: 100vh;    
+}
+
+.respuesta{
+    background-color: #ffffff;
+    border-radius: 32px;
+}
+
+.textarea1{
+    background-color: transparent;
+    background-color: transparent;
+}
+
+.mensajePanelDerecho{
+    background-color: #ffffff;
+    width: 336px;
+    height: 122px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align:center;
+}
+
+#mensajeUsuario{
+    background-color: transparent;
+    border: none; 
+    outline: none; /* Sin borde al hacer clic */
+    color: #0a3871; 
+    font-size: 20px;
+    caret-color: black; 
+
+}
+
+#respuesta{
+    background-color: transparent;
+    border: none; 
+    outline: none; /* Sin borde al hacer clic */
+    color: #0a3871; 
+    font-size: 16px;
+    caret-color: black;
+    font-size: 20px;
+}
+
+
+@media (max-width: 576px) {
+    .division {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .botones {
+        width: 100%;
+        padding: 0 16px;
+        gap: 12px; 
+    }
+
+    #imagen {
+        display: none;
+    }
+
+    .panelDerecho {
+        width: 100%;
+        height: auto; 
+        padding: 16px; 
+        text-align: center;
+    }
+}
